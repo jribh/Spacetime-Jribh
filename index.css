@@ -107,7 +107,7 @@ html, body {
 }
 
 #stars-div {
-    background: url(/Assets/SVGs/stars.svg) repeat;
+    background: url(Assets/SVGs/stars.svg) repeat;
     animation: wave 24s linear infinite;
     position:absolute;
     height:30em;
@@ -137,7 +137,7 @@ html, body {
 }
 
 #banner-blue-2-top {
-    background: url(/Assets/SVGs/top-dark-blue.svg) repeat-x;
+    background: url(Assets/SVGs/top-dark-blue.svg) repeat-x;
 
     z-index: 1;
     width: 7680px;    
@@ -145,7 +145,7 @@ html, body {
 }
 
 #banner-blue-3-top {
-    background: url(/Assets/SVGs/top-light-blue.svg) repeat-x;
+    background: url(Assets/SVGs/top-light-blue.svg) repeat-x;
     z-index:2;
 
     width: 7680px;    
@@ -153,7 +153,7 @@ html, body {
 }
 
 #banner-white-top {
-    background: url(/Assets/SVGs/top-white.svg) repeat-x;
+    background: url(Assets/SVGs/top-white.svg) repeat-x;
     z-index:3;
 
     width: 7680px;    
@@ -161,7 +161,7 @@ html, body {
 }
 
 #banner-blue-2-bottom {
-    background: url(/Assets/SVGs/bottom-dark-blue.svg) repeat-x;
+    background: url(Assets/SVGs/bottom-dark-blue.svg) repeat-x;
     background-position: bottom;
     bottom:0;
     position:absolute;
@@ -174,7 +174,7 @@ html, body {
 }
 
 #banner-blue-3-bottom {
-    background: url(/Assets/SVGs/bottom-light-blue.svg) repeat-x;
+    background: url(Assets/SVGs/bottom-light-blue.svg) repeat-x;
     background-position: bottom;
     z-index:2;
     bottom:0;
@@ -188,7 +188,7 @@ html, body {
 }
 
 #banner-white-bottom {
-    background: url(/Assets/SVGs/bottom-white.svg) repeat-x;
+    background: url(Assets/SVGs/bottom-white.svg) repeat-x;
     background-position: bottom;
     z-index:3;
     bottom:0;
@@ -481,7 +481,7 @@ li {
 #light-propagation-svg {
     width:11201.81px;
     height:20em;
-    background: url(/Assets/SVGs/light-propagation-png.png) repeat-x;
+    background: url(Assets/SVGs/light-propagation-png.png) repeat-x;
     background-position: left center;
     background-size: 1500px;
     z-index: -1;
