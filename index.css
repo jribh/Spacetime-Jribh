@@ -341,16 +341,19 @@ li {
 
 .left-aligned-container {
     margin:0 0 0 25vw;
+	overflow : auto;
 }
 
 .right-aligned-container {
     justify-content: right;
     margin:0 25vw 0 0;
+	overflow : auto;
 }
 
 .left-aligned-text, .right-aligned-text {
     width:21em;
     opacity : 0.2;
+	overflow : auto;
 }
 
 .left-aligned-viz, .right-aligned-viz {
