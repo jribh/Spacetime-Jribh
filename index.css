@@ -341,6 +341,7 @@ li {
 
 .left-aligned-container {
     margin:0 0 0 25vw;
+	display:inline-block;
 }
 
 .right-aligned-container {
@@ -351,6 +352,7 @@ li {
 .left-aligned-text, .right-aligned-text {
     width:21em;
     opacity : 0.2;
+	display:inline-block;
 }
 
 .left-aligned-viz, .right-aligned-viz {
