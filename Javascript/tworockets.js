@@ -31,7 +31,7 @@ async function spacetimeSpeedometer() {
 
 
     async function drawLineChart() {
-        const dataset = await d3.csv("Javascript/Assets/Two_rockets/For_circle.csv");
+        const dataset = await d3.csv("For_circle.csv");
 
         const xAccessor = (d) => d.X;
         const yAccessor = (d) => d.Y;
