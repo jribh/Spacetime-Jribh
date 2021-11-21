@@ -6,7 +6,7 @@ async function photonPlank() {
 
 let dimensions = {
     timeDiv: {
-        width : 820,
+        width : 710,
         height : 430
     },
     rect: {
@@ -776,7 +776,7 @@ if(val<0.025) {
 else {
     
     simulText
-            .attr('x', ((2*dimensions.rect.width)+2*dimensions.padding.left + movement/2) + plankX + 40)
+            .attr('x', ((2*dimensions.rect.width)+2*dimensions.padding.left + movement/2) + plankX + 30)
             .attr('y', ((leftLineY2 / 2) + dimensions.padding.top / 2))
             .style("opacity", "100%")
             .text("Break in simultaneity");
