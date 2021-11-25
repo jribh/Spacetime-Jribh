@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Space and Time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div id="title-container">
+    <div id="visually-understanding">VISUALLY UNDERSTANDING</div>
+    <div id="title">Space and Time</div>
+</div>
+
+<div id="top-banner">
+        <div id="both-strips">
+            <div id="top-strips">
+                <div id="banner-white-top"></div>
+                <div id="banner-blue-3-top"></div>
+                <div id="banner-blue-2-top"></div>
+            </div>
+            <div id="banner-fire-trail">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3714.717 20" id="fire-trail-svg">
+                    <g id="Group_20" data-name="Group 20" transform="translate(10 10)">
+                      <line id="Line_16" data-name="Line 16" y2="3678.465" transform="translate(3678.465) rotate(90)" fill="none" stroke="#ee3145" stroke-linecap="round" stroke-width="20"/>
+                      <line id="Line_15" data-name="Line 15" y2="3672.465" transform="translate(3678.465) rotate(90)" fill="none" stroke="#f47001" stroke-linecap="round" stroke-width="15"/>
+                      <line id="Line_12" data-name="Line 12" x1="4.943" transform="translate(3673.227)" fill="none" stroke="#f8d442" stroke-linecap="round" stroke-width="10"/>
+                      <line id="Line_14" data-name="Line 14" y2="3651.458" transform="translate(3660.458) rotate(90)" fill="none" stroke="#f8d442" stroke-linecap="round" stroke-width="10"/>
+                      <line id="Line_13" data-name="Line 13" y2="3650.718" transform="translate(3659.719) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+                      <line id="Line_11" data-name="Line 11" y2="28.99" transform="translate(3702.217) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+                    </g>
+                  </svg>                                  
+            </div>
+            <div id="banner-fire-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28.808" height="28.808" viewBox="0 0 28.808 28.808" id="banner-circle-svg">
+                    <g id="Group_19" data-name="Group 19" transform="translate(-765.052 -497.596)">
+                      <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="14.404" cy="14.404" rx="14.404" ry="14.404" transform="translate(793.859 497.596) rotate(90)" fill="#ee3145"/>
+                      <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="9.828" cy="9.828" rx="9.828" ry="9.828" transform="translate(789.453 502.341) rotate(90)" fill="#f8d442"/>
+                      <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="6.27" cy="6.27" rx="6.27" ry="6.27" transform="translate(786.064 505.73) rotate(90)" fill="#fff"/>
+                    </g>
+                  </svg>                  
+            </div>
+            <div id="banner-rocket">
+                <img src="Assets/SVGs/rocket.png" alt="rocket-ship" id="rocket-png-banner">
+            </div>
+            <div id="stars-div"></div>
+            <div id="bottom-strips">
+                <div id="banner-blue-2-bottom"></div>
+                <div id="banner-blue-3-bottom"></div>
+                <div id="banner-white-bottom"></div>
+            </div>
+        </div>
+</div>
+
+<div id="top-banner-slider">
+    <input type="range" id="top-banner-range" min="1" max="1000" step="1" value="1">
+</div>
+
+<div id="abstract">
+    <div id="abstract-text">What is the science behind spacetime distortions? How does relativity govern what happens not only at high speeds, but also in our day to day lives? Explore this guide with interactive visualisations to understand all there is behind the Special and General Theories of Relativity.</div>
+    <div id="abstract-bottom-div">
+        <div id="name">
+            <ul>
+                <li>JRIBH SHANDILYA</li>
+                <li>IDC IIT BOMBAY</li>
+            </ul>
+        </div>
+        <div id="date">
+            <ul>
+                <li>November</li>
+                <li>2021</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="all-containers">
+
+    <div class="left-aligned-container" id="pinned-container-1">
+        <div class="left-aligned-text opacity">
+            <h1 class="h1-big">Introduction</h1>
+
+            <p class="paragraphs">The Special and General Theories of Relativity weren't just another discoveries, rather notions that re-thought the very existence of space and time. 
+                Although the topics are unintuitive, we can attempt to abstract them to visually understand what's happening. This article follows a narrative which covers topics ranging 
+                from the basics of unaccelerated reference frames of Special Relativity, to the distortions in spacetime of General Relativity.</p>
+
+            <h1 class="h1-small">The Speed of Light</h1>
+
+            <p class="paragraphs">The speed of light, 'c', is constant. Why?<br><br>
+
+                Look at the visualisation on the right. Light is a 
+                wave formed by alternating magnetic and 
+                electric fields.  It must move to exist. If its 
+                speed were to vary, there would be a scenario 
+                where you could perceive it to be stationary. 
+                That's impossible, because the alternating 
+                fields must constantly move, and never be 
+                stationary. Thus, c is a constant.<br><br>
+                
+                This fact is important and forms the backbone 
+                of what we encounter hereon.</p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-1">
+            <div id="light-propagation-svg">
+                <div id="light-prop-left-rect"></div>
+                <div id="light-prop-right-rect"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-2">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">Reference Frames</h1>
+
+            <p class="paragraphs">Reference frames are different points of view through which events can be seen. The same event can be seen differently from different reference frames.<br><br>
+
+                Consider two friends waving at each other. One is in a moving rocket with uniform linear motion (moving unaccelerated in a straight line), and the other outside. Notice how both friends can easily perceive themselves to be at rest, and the other one as moving.</p>
+
+            <h1 class="h1-small">Restricted Principle of Relativity</h1>
+
+            <p class="paragraphs">Based on what we just saw, the restricted principle of relativity tells us that no reference frame is special. In other words, all reference frames must have the same laws of physics (for instance, the speed of light).<br><br>
+
+                It's restricted, because at the moment we are only talking about uniformly and linearly moving reference frames.</p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-2">
+            <img src="Assets/Images/reference frames.JPG" alt="Reference Frames" class="img-fluid" id="ref-frame-img">
+        </div>
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-3">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">Reference Frames and the Speed of Light</h1>
+
+            <p class="paragraphs">We just saw that no observer should measure light moving at a speed other than c. But, what if the friend in the spaceship lights up a torch? Will the speed of light add up with the spaceship’s speed for the outside observer?<br><br>
+
+                The answer is it won’t. The speed has to remain constant, and for that, something has to give way. That something is time.</p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-3">
+            <img src="Assets/Images/light in rocket.JPG" alt="Reference Frames" class="img-fluid" id="rocket-light">
+        </div>
+    </div>
+
+    <div class="simultaneous">
+        <div id="what-is">WHAT IS</div>
+
+        <div class="video-container">
+            <video loop autoplay muted playsinline>
+                <source src="Assets/4k colors.mp4" type="video/mp4">
+            </video>
+            <!-- <div id="simultaneous-colored">SIMULTANEOUS</div> -->
+            <svg width="105%" height="108%">
+                <mask id="mask" height="150%" width="150%">
+                  <rect x="0" y="0" width="100%" height="100%" fill="#fff"></rect>
+                  <text>
+                    <tspan x="50%" dy="1em">SIMULTANEOUS</tspan>  
+                  </text>
+                </mask>
+                <rect width="100%" height="100%" mask="url(#mask)" fill="#ffffff"></rect>
+            </svg>
+        </div>
+
+        <div id="question-mark">?</div>
+    </div>
+
+    <div class="right-aligned-container" id="pinned-container-4">
+        <div class="right-aligned-viz" id="sticky-viz-4">
+            <img src="Assets/Images/plank.JPG" alt="Reference Frames" class="img-fluid" id="plank-no-time">
+        </div>
+        <div class="right-aligned-text">
+            <h1 class="h1-big">Movement and Simultaneity</h1>
+
+            <p class="paragraphs">Consider the plank on the left, with a photon emitter (in easy words, a light torch) in the centre, and two mirrors at each end. Imagine it is kept in the spaceship of the friend we saw earlier. <br><br>
+
+                If the ship is stationary, both friends see the photons hit the mirrors at the same time. Now, when the ship is moving at a constant velocity, as seen by the friend outside, light takes a longer time to reach the right mirror. This is because, after the light is emitted, the mirror on the right has moved further away, and light has to travel a greater distance.<br><br>
+                
+                On the other hand, the friend inside the spaceship sees the light hitting the two mirrors simultaneously, as the plank is at rest compared to him, and only the world outside his window is moving. </p>
+        </div>
+    </div>
+
+    <div class="right-aligned-container" id="pinned-container-5">
+        <div class="right-aligned-viz" id="sticky-viz-5">
+            <div id="through-time"></div>
+            <div id="slider-plank"></div>
+        </div>
+        <div class="right-aligned-text">
+            <h1 class="h1-small">The Plank also moves through Time</h1>
+
+            <p class="paragraphs">All objects, even stationary ones, are constantly moving through time, tirelessly progressing towards the future. Let's add a moving time direction on the Y axis on our plank visualisation. <br><br>
+
+                Move the slider to change the ship's velocity. Once the velocity is something other than zero, it's clear how the event of the photons hitting both the mirrors is simultaneous for the friend on the spaceship, but not so much for the friend watching from outside. <br><br>
+                
+                This happens because, as the light is emitted, the two ends are at different positions in spacetime. Notice how, as the plank moves faster, its length also distorts. <sup>[1]</sup></p>
+        </div>
+    </div>
+
+    <div class="right-aligned-container" id="pinned-container-6">
+        <div class="right-aligned-viz" id="sticky-viz-6">
+            <img src="Assets/Images/spacetime.JPG" alt="Reference Frames" class="img-fluid" id="spacetime-are-one">
+        </div>
+        <div class="right-aligned-text">
+            <h1 class="h1-small">Space and Time are One</h1>
+
+            <p class="paragraphs">As seen from the previous visualisation, desynchronization in time is inevitably accompanied by length foreshortening. This leads us to the revolutionary suggestion by Einstein- Space and Time are not independent, but one. You can’t change one without affecting the other. Whenever you move, it’s never exclusively in space or time. It is ALWAYS in SPACETIME.<br><br>
+
+                Since you are a 3 dimensional being watching this on a 2 dimensional screen, it is impossible for me to even try to visualise 4 dimensional spacetime. I will, however, extract some spatial dimensions in the visualisations that follow, and show them with time.</p>
+        </div>
+    </div>
+
+    <div class="right-aligned-container" id="pinned-container-7">
+        <div class="right-aligned-viz" id="sticky-viz-7">
+            <img src="Assets/Images/moves at c.JPG" alt="Reference Frames" class="img-fluid" id="moves-at-c">
+        </div>
+        <div class="right-aligned-text">
+            <h1 class="h1-small">Everything travels at 'c' through spacetime</h1>
+
+            <p class="paragraphs">Here is where the “assumption” comes in: everything travels through spacetime at the speed of light c, nothing less and nothing more. Stars, planets, atoms, trees, me and you, all are ALWAYS hurling through spacetime at the maximum possible speed. Even stationary objects are moving through time, as space and time are not independent. <sup>[2]</sup> <br><br>
+
+                If an object does move through space, it has to divert some of its speed through time to move through space. Thus, it moves through less time.</p>
+        </div>
+    </div>
+
+    <div class="photon-tube">
+        <h2 class="photon-tube-title">THE PHOTON TUBE</h2>
+        <div class="photon-tube-content">
+            <div class="photon-tube-text">
+                <p class="photon-tube-para">Why do fast moving objects move through less time? Consider a huge a photon tube (basically, a tube with a light torch), and place this on the spaceship of one of our
+                    two friends. The tube is 1 light second long (ie. light takes 1 second to reach from one end to another, if the tube is stationary). The left tube is from the frame of reference of the traveller, while the right one is as seen by the outsider.
+                </p>
+                <p class="photon-tube-para">From the point of emission at the origin, the photon can only reach the edge of the dotted arc in one second, since it has a fixed velocity. Push that gas pedal on the ship and notice that as the tube moves faster and faster, the photon is able to cover a lesser vertical distance. This leads to apparent length of the tube being shorter the faster it is moving (the foreshortening effect), and the tube itself appearing to travel slower in time.
+                </p>
+                <p class="photon-tube-para">Note that all this is from the reference frame of the outsider. The friend on the spaceship still views it to be stationary, as seen on the tube on the left. Also notice, as the speed of the tube approaches the speed of light, it stops moving through time, as the light can never reach the other point, and its size becomes zero due to both the end points coinciding.
+                </p>
+            </div>
+            <div class="photon-tube-viz">
+                <div>
+                    <div id="photontubecontainerstationary"></div>
+                </div>
+                <div>
+                    <div id="photontubecontainer"></div>
+                    <div id="slider-tube"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-8">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">Spacetime Speedometer</h1>
+                <p class="paragraphs">Recall the banner visualisation on top of this page, showing a rocket hurling through space. If you moved the slider below it to change its speed, you'd have noticed that it shrinks the faster it is moving, as viewed by someone who is outside and stationary.<br><br>
+
+                    The 'speedometer' on the right helps visualise the exact length contraction and time dilation affecting the spaceship, which we get using formulae called Lorentz Transformations. The number next to 't' on the Y-axis is the fraction telling us exactly how much slower the spaceship is moving through time. <br><br>
+                    
+                    Remember that no reference frame is special: just as the friend outside sees the time slowing down on the spaceship and the length getting contracted, the traveller observes the same for the world outside, for he has no reason to
+                    believe that he isn’t at rest and the world outside isn’t moving backwards.</p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-8">                  
+            <div id="wrapper">
+              <div id="segment"></div>
+            </div>
+            <div id="hoverRect"></div>
+            <div id="slider-speedometer"></div>
+        </div>
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-9">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">Worldlines and Light Cones</h1>
+
+            <p class="paragraphs">A cosmic speedometer is easy to understand, but physicists prefer spacetime diagrams where velocity is represented by slope. These
+                diagrams show a single spatial dimension on one axis, and the time dimension on the other.<br><br>
+                
+                All objects follow a path on this diagram, depending on their speed through space, called their worldline. The spatial and temporal dimensions are chosen such that the world line of light is a 45 degree inclined line. If we include the Z axis to show another spatial dimension, we can extrude this 45 degree line to form a cone, called a light cone.</p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-9">
+            <img src="Assets/Images/light cone.JPG" alt="Reference Frames" class="img-fluid" id="light-cones">
+        </div>
+    </div>
+
+    <div class="accelerate">
+        <div id="lets">LET'S</div>
+        <div class="video-container">
+            <video loop autoplay muted playsinline>
+                <source src="Assets/4k colors.mp4" type="video/mp4">
+            </video>
+            <svg width="105%" height="108%">
+                <mask id="mask2" height="150%" width="150%">
+                  <rect x="0" y="0" width="100%" height="100%" fill="#fff"></rect>
+                  <text>
+                    <tspan x="50%" dy="1em">ACCELERATE</tspan>  
+                  </text>
+                </mask>
+                <rect width="100%" height="100%" mask="url(#mask2)" fill="#ffffff"></rect>
+            </svg>
+        </div>
+        <!-- <div id="accelerate-colored">ACCELERATE</div> -->
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-10">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">Accelerating Reference Frames</h1>
+
+            <p class="paragraphs">What would happen if our friend in the rocket ship decides to accelerate or turn his ship, while his friend outside doesn’t move? How would time and space behave for both of them?<br><br>
+
+                This leads us to Einstein's most beautiful thought, the Principle of Equivalence, which says that accelerating reference frames can be thought of as stationary if one believes that an external gravitational field is acting on the frame. This allows us to apply the principle of relativity, which we just discussed, in a more GENERAL sense, ie. all laws of physics hold true for such a reference frame, including the constancy of velocity of light.<br><br>
+                
+                The figure on the right gives us the following important insight, inertial mass = gravitational
+                mass</p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-10">
+            <img src="Assets/Images/inertial gravitational mass.JPG" alt="Reference Frames" class="img-fluid" id="equivalence">
+        </div>
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-11">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">A Rotating Disc</h1>
+
+            <p class="paragraphs">Taking a break from the two friends, consider a huge merry-go-round that is rotating around
+                its center. The rotational speed can be such that the outermost edge of the disc can almost but not completely reach the speed of light. Now, how would three different people, standing at blue, red and grey points, measure the circumference?<br><br>
+                
+                Move the slider to make the merry-go-round rotate. On a rotating disc, the outermost point is moving faster with respect to the points closer to the center, with the center always being stationary. Hence, according to our knowledge from Special relativity, the points moving faster should experience a slower clock. Also, the circumference of the disc should be measured differently by two observers who are at different distances from the center, due to relativistic length foreshortening, although the radius would be the same for everyone.<br><br>
+                
+                This clashes with our knowledge of classical geometry (or Euclidean geometry), where a circle of a fixed radius has to have a fixed circumference. This leads us to conclude that space and time don’t behave as expected when reference frames are accelerated. A straight line isn’t always straight, and triangles aren’t always planar. Think of it as a napkin. A line drawn on a flat napkin appears to curve if the napkin is wrinkled.</p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-11">
+            <div id="rotating-disc"></div>
+            <div id="rotating-disc-labels"></div>
+            <div id="slider-rotatingdisc"></div>
+        </div>
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-12">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">Straight Lines and Multiple Dimensions</h1>
+
+            <p class="paragraphs">What is a straight line? Consider that we draw a straight line on a flat piece of paper (that’s 2 dimensional). Now, if we roll the paper
+                into 3 dimensions, the line isn’t straight anymore, rather curved.<br><br>
+                
+                Straight lines can become curved and vice versa when the number of dimensions change. Figure on the right shows how a straight line drawn on a 3 dimensional sphere appears curved when we flatten out the sphere onto 2 dimensions. Similarly, a line that’s straight in 4 dimensional spacetime might not be straight anymore when seen in 3 dimensions.</p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-12">
+            <img src="Assets/Images/straight lines.JPG" alt="Reference Frames" class="img-fluid" id="straight-lines">
+        </div>
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-13">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">Mass curves Spacetime</h1>
+
+            <p class="paragraphs">We know that accelerating bodies curve spacetime. We also know that acceleration can be substituted with gravitational field, since
+                gravitational mass is equal to inertial mass.
+                Since gravitational fields are caused by the presence of mass, we conclude that mass causes spacetime to curve. This curvature of
+                spacetime in turn dictates the movement of mass in it. Thus, whenever a mass is present, spacetime cannot be Euclidean, but Gaussian
+                (curved).</p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-13">
+            <img src="Assets/Images/mass curves.JPG" alt="Reference Frames" class="img-fluid" id="mass-curves">
+        </div>
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-14">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">Worldlines in Curved Spacetime</h1>
+
+            <p class="paragraphs">Consider the familiar 2D diagram with space on the X axis and time on the Y axis. Without the presence of any mass, spacetime is Euclidean, behaving like it used to in Special Relativity. Any stationary object, like an apple. would have a vertical worldline (the path it traces on the graph), as it is currently just moving through time. <br><br>
+
+                Now, let’s place a massive object, like the earth, towards the right, which would cause spacetime to curve. More specifically, more the gravitational field, the slower time passes. This leads to the spacetime diagram getting distorted, with time passing more
+                slowly to the right. Now, if we make a worldline of an apple, it will still be straight, as
+                it was initially at rest and just moving through time. Notice however, due to spacetime now being curved, it has inevitably also moved along space (the X-coordinate), towards the right (towards the earth). This clearly shows the effect of gravity- Earth curves spacetime such that objects initially at rest start falling towards it. <sup>[3]</sup></p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-14">
+            <img src="Assets/Images/apple worldline.JPG" alt="Reference Frames" class="img-fluid" id="worldlines-apple">
+        </div>
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-15">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">Rolling up Curved Spacetime</h1>
+
+            <p class="paragraphs">Curved spacetime on a flat surface can be difficult to visualise, even if we restrict ourselves to just one spatial dimension. Welcome embedding diagrams, which are simply rolled up versions of the 2D curved spacetime diagrams we just saw. Embedding diagrams help visualise the curvature in spacetime better and more intuitively. Remember that, although in 3D, embedding diagrams still only show one time dimension and one spatial dimension.<br><br>
+
+                When one literally rolls a flat piece of paper, it results in a spiral fold rather than a continuous cylinder. The same is applicable here. An
+                object moving through time would not end up at the same point in the past after every revolution, but at a different point in the future.
+                We can however, for the sake of simplification, ignore this fold for our purposes, as it would serve to distract from the actual purpose of the
+                diagram.</p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-15">
+            <img src="Assets/Images/straight embeddings.JPG.jpg" alt="Reference Frames" class="img-fluid" id="embeddings-rolled">
+        </div>
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-16">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">Geodesics in Embedding Diagrams</h1>
+
+            <p class="paragraphs">The visual on the right shows the worldline of an apple as it "falls" through curved spacetime under the influence of gravity. <sup>[4]</sup><br><br>
+
+                Press 'Play' to see the action. As time gets dilated on the right, the worldline starts drifting towards the right. This reflects in the movement of the apple in space, as it accelerates towards the right.</p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-16">
+            <h3 id="reload-button">Play &#8635;</h3>
+            <div id="apple-div-geodesics"></div>
+            <div id="embedding-geodesics"></div>
+        </div>
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-17">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">Gravity in Embedding Diagrams</h1>
+
+            <p class="paragraphs">Consider the apple kept, initially stationary, at the leftmost point. Even while stationary, it is constantly passing through time, and its worldline forms loops around the embedding diagram. Now, try moving the slider to increase the time dilation towards the right. Due to the curvature of spacetime, the worldline starts drifting towards the right, ie. towards the supposed massive object causing the time dilation <sup>[5]</sup>. Thus, the apple starts “falling” due to the “force” of gravity. <br><br>
+
+                Note that different types of embedding diagrams can be made depending on the calculations. The time dilation can be shown as a bulge (called dual metric) or as a crunch (called absolute metric). <sup>[6]</sup></p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-17">
+            <div id="apple-div"></div>
+            <div id="embedding-apple"></div>
+            <div id="slider-mass-apple"></div>
+        </div>
+    </div>
+
+    <div class="left-aligned-container" id="pinned-container-18">
+        <div class="left-aligned-text">
+            <h1 class="h1-small">Embedding diagrams of different masses</h1>
+
+            <p class="paragraphs">How do stronger gravitational fields visually affect embedding diagrams?<br><br>
+
+                Consider a massive body as shown on the right. Let's start by giving it the mass and radius of our sun. The central bulge in the embedding diagram below it shows how the gravitational field of the sun dilates time, and it is bigger for more massive bodies. This type of embedding diagram is called a Dual Embedding.<br><br>
+                
+                As you'd increase the mass, notice the dotted circle around the object. That's called the Schwarzschild Radius. When an object’s radius becomes smaller than its Schwarzschild Radius, it turns into a black hole.<br><br>
+                
+                Notice the black hole embedding. The graph outside the event horizon familiarly shows space on the X axis and time on the Y axis. Approaching the event horizon, the embedding isn't really well defined. However, once inside the event horizon, space and time get interchanged. Time lies on the X axis. Thus, once inside the event horizon, the singularity lies in your future. The journey is inevitable.</p>
+        </div>
+        <div class="left-aligned-viz" id="sticky-viz-18">
+            <!-- <div id="embedding-mass-slider-label">Mass (in Solar Masses)</div>
+            <div id="embedding-radius-slider-label">Radius (in KM)</div> -->
+            <div id="slider-mass"></div>
+            <div id="slider-radius"></div>
+            <div id="embedding-mass"></div>
+            <div id="embedding-dual"></div>
+        </div>
+    </div>
+
+    <div class="light-move">
+        <div id="how-does">HOW DOES</div>
+        <div class="video-container">
+            <video loop autoplay muted playsinline>
+                <source src="Assets/4k colors.mp4" type="video/mp4">
+            </video>
+            <svg width="105%" height="108%">
+                <mask id="mask3" height="150%" width="150%">
+                  <rect x="0" y="0" width="100%" height="100%" fill="#fff"></rect>
+                  <text>
+                    <tspan x="50%" dy="1em">LIGHT</tspan>  
+                  </text>
+                </mask>
+                <rect width="100%" height="100%" mask="url(#mask3)" fill="#ffffff"></rect>
+            </svg>
+        </div>
+        <!-- <div id="light-colored">LIGHT</div> -->
+        <div id="move">MOVE ?</div>
+    </div>
+
+    <div class="right-aligned-container" id="pinned-container-19">
+        <div class="right-aligned-viz" id="sticky-viz-19">
+            <img src="Assets/Images/light in embedding.JPG" alt="Reference Frames" class="img-fluid" id="embeddings-light">
+        </div>
+        <div class="right-aligned-text">
+            <h1 class="h1-small">Light in Embedding Diagrams</h1>
+
+            <p class="paragraphs">Since light is massless and travels at c, it doesn’t move through time, and only through space (remember the speedometer diagram).<br><br>
+
+                The visual shows light moving horizontally, just through space, both in the absence and presence of a gravitational field. Notice how light has to travel a larger distance in the curved spacetime diagram than the one which
+                is flat, in an equal amount of time. This means that the presence of mass, apart from dilating time, must also be expanding space.</p>
+        </div>
+    </div>
+
+    <div class="right-aligned-container" id="pinned-container-20">
+        <div class="right-aligned-viz" id="sticky-viz-20">
+            <div id="slider-mass-warp"></div>
+            <div id="embedding-mass-warp"></div>
+            <div id="embedding-time-warp"></div>
+            <div id="space-warp"></div>
+        </div>
+        <div class="right-aligned-text">
+            <h1 class="h1-small">Space and time curvatures together</h1>
+
+            <p class="paragraphs">We know that masses slow down time. We also know that masses increase space.Move the slider here to see how both of them are affected, as the mass of an object increases.
+                <br><br>
+                The top embedding shows the familiar spacetime diagram, with time on the Y axis (rolled up), and space along the X axis. The bottom diagram is a space-space diagram, with both the X and Y axes showing spatial directions <sup>[7]</sup>. <br><br>
+
+                Point to remember is that all these are abstract visualizations which help develop intuition, and in no way are visual representations of how
+                curved spacetime literally looks like.</p>
+        </div>
+    </div>
+
+    <div class="right-aligned-container" id="pinned-container-21">
+        <div class="right-aligned-viz" id="sticky-viz-21">
+            <h3 id="reload-button-lightbending">Play &#8635;</h3>
+            <div id="embedding-lightbending"></div>
+        </div>
+        <div class="right-aligned-text">
+            <h1 class="h1-small">Light curves in gravitational fields</h1>
+
+            <p class="paragraphs">An observable implication of spacetime curvature is the curving of light. Note that the velocity of light (its speed and direction) are still constant. It is the spacetime itself that curves around it, making it look curved to an outside observer.
+                <br><br>
+                As light just passes through space and not through time, we can use the space-space diagram (the bottom one above) to make a path for light. We can tell intuitively that curved spacetime causes the beam of light to bend towards the mass <sup>[7]</sup>.</p>
+        </div>
+    </div>
+
+    <div class="right-aligned-container">
+        <div class="right-aligned-text">
+            <h1 class="h1-small">Conclusion</h1>
+
+            <p class="paragraphs">It is impossible to visualise or even conceive of how 4 dimensional spacetime truly behaves. We can, however, extract dimensions and develop abstractions that allow us to fit in our observations of the real world as much as possible. Embedding diagrams are one such way of abstraction and representation of something that's not only weirder than you imagine, it's weirder than you can imagine.</p>
+        </div>
+    </div>
+</div>
+
+<div id="footnotes">
+    <h1 class="h1-big">Footnotes</h1>
+    <p class="paragraphs">
+        <ol>
+            <li>The constraint here that defines the amount of distortion the plank undergoes is the fact that both the photons will always move at 45 degree angles to the vertical. This is because, in a space and time diagram, light rays always move at 45 degrees, forming something called a light cone.</li>
+            <li>Notice how the spacetime diagram shows light at a 45 degree angle to the vertical. This is because the units for both the axes are chosen in this way.</li>
+            <li>Non-accelerating bodies, like this apple which is kept at rest, always follow straight lines in the spacetime diagram- as in, their worldlines are straight. Once the worldline starts curving in spacetime, the object starts accelerating, as in it starts to move. Thus, the apple starts falling due to the apparent force of gravity.</li>
+            <li>Think of geodesics moving on embedding diagrams like a toy car moving on a surface. It always moves perpendicular to the surface. In the same way, a geodesic follows a circular pathway on an embedding that's cylindrical, and the apple just moves through time. However, as the embedding changes shape to become thicker towards the right, the geodesic starts drifting towards the right, thus also moving the apple through space along with time.</li>
+            <li>The equation for the cross section used for creating the shape of the embedding used here is: $$ {f(x) =\sqrt{\frac{x-1}{x-b}} } $$ where b>1 and the value of b decides the amount of dilation on the right.</li>
+            <li>The dual metric and the absolute metric look different but are ultimately different abstractions of the same spacetime. Both the schemes depend on which generator has been chosen for the worldline. The Dual scheme shows slower moving time with a larger bounding circumference on the embedding diagram, while the Absolute cheme does vice versa, with slower moving time having a smaller circumference. See references for more details.</li>
+            <li>This 'expansion of space' caused due to the presence of masses actually has measurable effects. The presence of the sun causes a space distortion in such a way that the orbit of Mercury changes slightly with each revolution. This is called the Perihelion Shift, and has been measured with great accuracy.</li>
+            <li>Like Mercury's Perihelion Shift, the curving of light caused by the presence of mass has also been accurately measured, reinforcing the Theory of Relativity. The presence of the sun causes a slight change in the apparent positions of stars visible close to the sun, as seen from the earth, because the distorted spacetime near the sun causes their light to get slightly bent towards it. </li>
+        </ol>
+    </p>
+</div>
+
+<div id="references">
+    <h1 class="h1-big">References</h1>
+    <p class="paragraphs">
+        <ol>
+            <li>distill. 2020a. Communicating with Interactive Articles. (2020).
+                <a href="https://distill.pub/2020/communicating-with-interactive-articles/">[Link]</a></li>
+            <li>distill. 2020b. Why Momentum Really Works. (2020).
+                <a href="https://distill.pub/2017/momentum/">[Link]</a></li>
+            <li>Tony Doat, Etienne Parizot, and Jean-Marc Vézien. 2011. A
+                carom billiard to understand special relativity. In 2011 IEEE
+                Virtual Reality Conference. 201–202. DOI:
+                http://dx.doi.org/10.1109/VR.2011.5759468</li>
+            <li>A Einstein. 1915. Relativity: The Special and the General
+                Theory. Princeton University Press.</li>
+            <li>ScienceClic English. 2020. A new way to visualize General
+                Relativity. (2020). <a href="https://www.youtube.com/watch?v=wrwgIjBUYVc&ab_channel=ScienceClicEnglish">[Link]</a></li>
+            <li>L Epstein. 1985. Relativity Visualized. Insight Press.</li>
+            <li>S Hawking. 1988. A Brief History of Time. Bantam Books.</li>
+            <li>S Hawking. 2001. The Universe In A Nutshell. Bantam Spectra.</li>
+            <li>STANISLAV HLEDÍK, ZDENE˘ K STUCHLÍK, and ALOIS
+                CIPKO. 2008. VISUALIZING SPACETIMES VIA EMBEDDING
+                DIAGRAMS. The Eleventh Marcel Grossmann Meeting (Sep
+                2008). DOI:
+                http://dx.doi.org/10.1142/9789812834300_0392</li>
+            <li>R Jonnson. 2004. Visualizing curved spacetime.</li>
+            <li>Rickard Jonsson. 2001. Embedding Spacetime via a
+                Geodesically Equivalent Metric of Euclidean Signature.
+                General Relativity and Gravitation 33, 7 (Jul 2001), 1207–1235.
+                DOI:http://dx.doi.org/10.1023/a:1012037418513</li>
+            <li>Magdalena Kersting. 2019. Free Fall in Curved Spacetime.
+                (2019). <a href="https://iopscience.iop.org/article/10.1088/1361-6552/ab08f5/meta">[Link]</a></li>
+            <li>Masaaki Kurosu and Kaori Kashimura. 1995. Apparent
+                usability vs. inherent usability experimental analysis on the
+                determinants of the apparent usability. 2 (01 1995), 292–293.</li>
+            <li>MIT Game Lab. 2012. A Slower Speed of Light. (2012).
+                <a href="http://gamelab.mit.edu/games/a-slower-speed-of-light/">[Link]</a></li>
+            <li>Donald Marolf. 1999. Spacetime Embedding Diagrams for
+                Black Holes. General Relativity and Gravitation 31, 6 (Jun
+                1999), 919–944. DOI:
+                http://dx.doi.org/10.1023/a:1026646507201</li>
+            <li>r2d3. 2020. A visual introduction to machine learning. (2020).
+                <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">[Link]</a></li>
+            <li>E Tufte. 1990. Envisioning Information. Graphics Press.</li>
+            <li>udiprod. 2008. Visualization of Einstein’s special relativity.
+                (2008). <a href="https://www.youtube.com/watch?v=C2VMO7pcWhg&ab_channel=udiprod">[Link]</a></li>
+            <li>D. Weiskopf, M. Borchers, Thomas Ertl, Martin Falk, Oliver
+                Fechtig, Regine Frank, Frank Grave, A. King, U. Kraus,
+                Thomas Müller, Hans-Peter Nollert, I.R. Mendez, H. Ruder, T.
+                Schafhitzel, Sonja Schar, Corvin Zahn, and M. Zatloukal. 2005.
+                Visualization in the Einstein Year 2005: a case study on
+                explanatory and illustrative visualization of relativity and
+                astrophysics. IEEE Visualization (VIS) (11 2005), 583– 590.
+                DOI:http://dx.doi.org/10.1109/VISUAL.2005.1532845</li>
+        </ol>
+    </p>
+</div>
+
+<div id="bottom-bar">
+    <p>Designed and developed by <span id="thicker"><a href="https://www.jribh.com/">Jribh Shandilya</a></span></p><br>
+    <p>Contact me on <span id="thicker">jribhshan@gmail.com</span></p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.3/d3.js" integrity="sha512-cDPdgERRVMU6Jz48Xa3FBYl71JhtzkUc/W687GTwDroCyCxL2MbQRuhQ7BFyAFSAI2GQLUBOrgW86K9pKFWt/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/d3-simple-slider"></script>    
+<script src="https://d3js.org/d3.v6.js"></script>
+<script src="https://unpkg.com/d3-simple-slider"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js" integrity="sha512-NLtnLBS9Q2w7GKK9rKxdtgL7rA7CAS85uC/0xd9im4J/yOL4F9ZVlv634NAM7run8hz3wI2GabaA6vv8vJtHiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.js" integrity="sha512-tmdOKTY7I6MOUcCL/9fa4s+BnBCgEuifJImOX46m36+rxVMcgHEPGLVoCXHR6ZvjcKGoVixEiBKE4LcYLnv0Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://unpkg.com/three@0.85.0/examples/js/controls/OrbitControls.js"></script>
+
+<script src="https://threejs.org/examples/js/exporters/GLTFExporter.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+
+<script src="https://rawgit.com/mrdoob/three.js/dev/examples/js/renderers/CSS2DRenderer.js"></script>
+<script src="https://rawgit.com/gamestdio/three-text2d/master/dist/three-text2d.min.js"></script>
+
+<script type=”text/javascript” src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+<script src="Javascript/photonplank.js"></script>
+<script src="Javascript/tworockets.js"></script>
+<script src="Javascript/photontube.js"></script>
+<script src="Javascript/embeddinggravity.js"></script>
+<script src="Javascript/embeddingfunction.js"></script>
+<script src="Javascript/embeddinggeodesics.js"></script>
+<script src="Javascript/spacewarp.js"></script>
+<script src="Javascript/lightbending.js"></script>
+<script src="Javascript/rotatingdisc.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>
