@@ -1035,7 +1035,7 @@ sup {
 
 #best-viewed {
     position:fixed;
-    top:80vh;
+    top:70vh;
     z-index : 50;
     text-align:center;
     margin:0 0 0 50vw;
